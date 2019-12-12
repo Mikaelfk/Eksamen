@@ -11,13 +11,18 @@ public class UserInput {
         String input = "";
         boolean valid = false;
         do {
-            JFrame frame = new JFrame("InputDialog Example #1");
-            input = JOptionPane.showInputDialog(frame, "Type in "+ text);;
-            if(input.equals("")) {
-                JOptionPane.showMessageDialog(null, "Input cannot be empty, please try again");
+            try {
+                JFrame frame = new JFrame("InputDialog Example #1");
+                input = JOptionPane.showInputDialog(frame, "Type in " + text);
+                ;
+                if (input.equals("")) {
+                    JOptionPane.showMessageDialog(null, "Input cannot be empty, please try again");
+                } else {
+                    valid = true;
+                }
             }
-            else {
-                valid = true;
+            catch(Exception e) {
+                JOptionPane.showMessageDialog(null "This is not a valid String");
             }
         }while(!valid);
 
