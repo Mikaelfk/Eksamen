@@ -1,3 +1,5 @@
+import jdk.nashorn.internal.scripts.JO;
+
 import javax.swing.*;
 
 public class UserInput {
@@ -21,8 +23,8 @@ public class UserInput {
                     valid = true;
                 }
             }
-            catch(Exception e) {
-                JOptionPane.showMessageDialog(null, "This is not a valid String");
+            catch (Exception e) {
+                JOptionPane.showMessageDialog(null, "This String is not valid.");
             }
         }while(!valid);
 
