@@ -22,7 +22,7 @@ public class UserInput {
                 }
             }
             catch(Exception e) {
-                JOptionPane.showMessageDialog(null "This is not a valid String");
+                JOptionPane.showMessageDialog(null, "This is not a valid String");
             }
         }while(!valid);
 
