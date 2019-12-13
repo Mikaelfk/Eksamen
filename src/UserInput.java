@@ -9,7 +9,6 @@ public class UserInput {
      * retype the input.
      * @return The string which the user typed in.
      */
-    //Test comment
     public String stringInput(String text) {
         String input = "";
         boolean valid = false;
